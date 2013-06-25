@@ -12,6 +12,7 @@ import de.evosec.test.shared.FieldVerifier;
 public class GreetingServiceImpl extends RemoteServiceServlet implements
         GreetingService {
 
+	@Override
 	public String greetServer(String input) throws IllegalArgumentException {
 		// Verify that the input is valid.
 		if (!FieldVerifier.isValidName(input)) {
